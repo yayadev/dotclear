@@ -1,0 +1,39 @@
+#slider{
+	width: 100%;
+	/*background-color: #FFF;*/
+	z-index: 1000;
+	/*padding: 32px 0px;*/
+}
+#slider img{
+max-width:100%;
+max-height:200px;	
+}
+#menu{z-index:2000;}
+.carousel{
+	/*width:1080px;*/
+	padding: 0px 64px;
+	margin: 0 auto;
+	background-color: white;
+	/*border-radius: 16px;*/
+	/*border: solid 2px #458338;*/
+}
+.carousel-cell{
+	width:100%;
+}
+.carousel-padding{
+	padding:16px 128px;
+}
+/* enable Flickity by default */
+.carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
+}
+
+@media only screen and ( max-width: 480px ) {
+  /* disable Flickity for large devices */
+  .carousel:after {content: '';}
+}
+@media only screen and ( min-width: 480px ) and ( max-width: 980px ) {
+  /* disable Flickity for large devices */
+  .carousel {width:100%}
+}
